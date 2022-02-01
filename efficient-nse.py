@@ -20,6 +20,7 @@ app_title = "Markowitz Efficient Frontier Calculation"
 app_image = "/assets/asset_allocation.png"
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB, dbc.icons.FONT_AWESOME], title=app_title)
+server = app.server
 
 index_dict = {
     'nifty50': '^NSEI', 
